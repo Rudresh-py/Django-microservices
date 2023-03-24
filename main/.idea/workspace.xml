@@ -1,7 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a89eaec-48cd-447a-a100-2b640c3448df" name="Default Changelist" comment="" />
+    <list default="true" id="0a89eaec-48cd-447a-a100-2b640c3448df" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../admin/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/.dbdata/auto.cnf" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/.dbdata/auto.cnf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/.dbdata/ca-key.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/.dbdata/ca-key.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/.dbdata/client-key.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/.dbdata/client-key.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/.dbdata/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/.dbdata/ib_buffer_pool" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/.dbdata/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/.dbdata/ib_logfile0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/.dbdata/ib_logfile1" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/.dbdata/ib_logfile1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/.dbdata/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/.dbdata/ibdata1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/.dbdata/ibtmp1" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/.dbdata/ibtmp1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/.dbdata/private_key.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/.dbdata/private_key.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/.dbdata/server-key.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/.dbdata/server-key.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/.idea/admin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/.idea/admin.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/consumer.py" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/consumer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/products/producer.py" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/products/producer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/products/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../admin/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/wsgi.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,17 +55,35 @@
       </map>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7a126ced-7480-48de-9da1-eacc7775cc25/console.sql" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/.cache/JetBrains/PyCharm2021.1/remote_sources/322488701/-109814386/pika/__init__.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/consoles/db/288c8094-74b3-4821-ba53-9e2c18e58bf1/console.sql" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/docker-compose.yml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/consoles/db/da29b69d-0ac3-494c-a94b-25f2da38d1af/console.sql" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/requirements.txt" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Dockerfile" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/manage.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/user/models.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/main/settings.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/consoles/db/51e350c0-f873-4a63-8852-51bfd81e4d08/console.sql" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/consumer.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectId" id="2NMsczpCGnF3AGAW9OiIAWjk2UQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DatabaseDriversLRU" value="mysql&#10;sqlite" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../admin" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -36,7 +91,30 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Django Server.main">
+    <configuration name="main" type="Python.DjangoServer" factoryName="Django server">
+      <module name="main" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Flask" type="Python.FlaskServer" nameIsGenerated="true">
       <module name="main" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -60,6 +138,15 @@
       <option name="presentableId" value="Default" />
       <updated>1679485368516</updated>
       <workItem from="1679485369616" duration="15855000" />
+      <workItem from="1679648587706" duration="8000" />
+      <workItem from="1679648714408" duration="38000" />
+      <workItem from="1679648758937" duration="13000" />
+      <workItem from="1679649070636" duration="13000" />
+      <workItem from="1679649085382" duration="197000" />
+      <workItem from="1679649283652" duration="7000" />
+      <workItem from="1679649303554" duration="256000" />
+      <workItem from="1679657902519" duration="8300000" />
+      <workItem from="1679666778978" duration="616000" />
     </task>
     <servers />
   </component>
