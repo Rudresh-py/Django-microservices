@@ -8,6 +8,7 @@ load_dotenv(find_dotenv())
 
 # from products.models import Product
 
+
 params = pika.URLParameters(os.environ['AMQPS_KEY'])
 
 connection = pika.BlockingConnection(params)

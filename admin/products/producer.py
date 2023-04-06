@@ -1,9 +1,11 @@
 import json
 import pika
+import os
 
-params = pika.URLParameters(
-    'amqps://ivzdrafs:ayWp8Y9LV_TUCuHc5c_g7zQXiDJITB0t@kebnekaise.lmq'
-    '.cloudamqp.com/ivzdrafs')
+from dotenv import load_dotenv, find_dotenv
+
+load_dotenv(find_dotenv())
+params = pika.URLParameters(os.environ['AMQPS_KEY'])
 
 connection = pika.BlockingConnection(params)
 
