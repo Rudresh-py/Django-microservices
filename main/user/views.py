@@ -1,3 +1,47 @@
-from django.shortcuts import render
-
-# Create your views here.
+# from .models import Product
+# import json
+# import pika
+#
+#
+# params = pika.URLParameters(
+#     'amqps://ivzdrafs:ayWp8Y9LV_TUCuHc5c_g7zQXiDJITB0t@kebnekaise.lmq.cloudamqp.com/ivzdrafs')
+#
+# connection = pika.BlockingConnection(params)
+#
+# channel = connection.channel()
+#
+# channel.queue_declare(queue='main')
+#
+#
+# def callback(ch, method, properties, body):
+#     print('Received in main')
+#     data = json.loads(body)
+#
+#     print(data)
+#     if properties.content_type == 'product_created':
+#         product = Product(id=data['id'], title=data['title'],
+#                           image=data['image'])
+#         product.save()
+#         print('Product created successfully!')
+#
+#     elif properties.content_type == 'product_updated':
+#         product = Product.query.get(data['id'])
+#         product.title = data['title']
+#         product.image = data['image']
+#         product.save()
+#         print('Product Updated')
+#
+#     elif properties.content_type == 'product_deleted':
+#         product = Product.query.get(data)
+#         product.delete()
+#         print('Product Deleted')
+#
+#
+# channel.basic_consume(queue='main', on_message_callback=callback,
+#                       auto_ack=True)
+#
+# print('Started Consuming')
+#
+# channel.start_consuming()
+#
+# channel.close()

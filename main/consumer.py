@@ -1,17 +1,15 @@
 import json
-
 import pika
-from django.contrib import messages
+import os
+import django
+from dotenv import load_dotenv, find_dotenv
 
+load_dotenv(find_dotenv())
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "main.settings")
+django.setup()
 from user.models import Product
 
-# os.environ.setdefault("DJANGO_SETTINGS_MODULE", "admin.settings")
-# django.setup()
-
-# from products.models import Product
-
-params = pika.URLParameters(
-    'amqps://ivzdrafs:ayWp8Y9LV_TUCuHc5c_g7zQXiDJITB0t@kebnekaise.lmq.cloudamqp.com/ivzdrafs')
+params = pika.URLParameters(os.environ['AMQPS_KEY'])
 
 connection = pika.BlockingConnection(params)
 
@@ -24,19 +22,13 @@ def callback(ch, method, properties, body):
     print('Received in main')
     data = json.loads(body)
     print(data)
+    print(properties.content_type)
 
-    if properties.content_type == 'product_created':
+    if properties.content_type == 'product created':
         product = Product(id=data['id'], title=data['title'],
                           image=data['image'])
         product.save()
         print('Product created successfully!')
-
-    # if properties.content_type == 'product_created':
-    #     product = Product(id=data['id'], title=data['title'],
-    #                       image=data['image'])
-    #     db.session.add(product)
-    #     db.session.commit()
-    #     print('Product Created')
 
     elif properties.content_type == 'product_updated':
         product = Product.query.get(data['id'])
@@ -49,6 +41,10 @@ def callback(ch, method, properties, body):
         product = Product.query.get(data)
         product.delete()
         print('Product Deleted')
+    else:
+        print('wrong item')
+
+    print("work done")
 
 
 channel.basic_consume(queue='main', on_message_callback=callback,
