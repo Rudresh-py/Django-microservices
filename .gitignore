@@ -1,1 +1,6 @@
 /admin/venv/
+/main/venv/
+/admin/.env/
+/main/.env/
+/main/.idea/
+/admin/.idea
