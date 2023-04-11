@@ -1,47 +1,38 @@
-# from .models import Product
-# import json
-# import pika
-#
-#
-# params = pika.URLParameters(
-#     'amqps://ivzdrafs:ayWp8Y9LV_TUCuHc5c_g7zQXiDJITB0t@kebnekaise.lmq.cloudamqp.com/ivzdrafs')
-#
-# connection = pika.BlockingConnection(params)
-#
-# channel = connection.channel()
-#
-# channel.queue_declare(queue='main')
-#
-#
-# def callback(ch, method, properties, body):
-#     print('Received in main')
-#     data = json.loads(body)
-#
-#     print(data)
-#     if properties.content_type == 'product_created':
-#         product = Product(id=data['id'], title=data['title'],
-#                           image=data['image'])
-#         product.save()
-#         print('Product created successfully!')
-#
-#     elif properties.content_type == 'product_updated':
-#         product = Product.query.get(data['id'])
-#         product.title = data['title']
-#         product.image = data['image']
-#         product.save()
-#         print('Product Updated')
-#
-#     elif properties.content_type == 'product_deleted':
-#         product = Product.query.get(data)
-#         product.delete()
-#         print('Product Deleted')
-#
-#
-# channel.basic_consume(queue='main', on_message_callback=callback,
-#                       auto_ack=True)
-#
-# print('Started Consuming')
-#
-# channel.start_consuming()
-#
-# channel.close()
+from .producer import publish
+
+import requests
+
+from .serializers import ProductSerializer, ProductUserSerializer
+from .models import Product, ProductUser
+from rest_framework.response import Response
+from rest_framework.views import APIView
+
+
+class ProductList(APIView):
+    def get(self, request):
+        products = Product.objects.all()
+        serializer = ProductSerializer(products, many=True)
+        return Response(serializer.data)
+
+
+class LikeProduct(APIView):
+    def post(self, request, id):
+        req = requests.get('http://localhost:8000/user')
+        data = req.json()
+        try:
+            user_id = data['id']
+            product = Product.objects.get(id=id)
+            product_user = ProductUser(user_id=user_id, product_id=product)
+            product_user.save()
+            publish('product_liked', id)
+        except:
+            return Response({
+                "error": 'errors '
+            })
+
+        return Response({
+            'message': 'success'
+        })
+
+
+

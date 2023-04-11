@@ -1,11 +1,7 @@
 import json
 import pika
-import os
 
-from dotenv import load_dotenv, find_dotenv
-
-load_dotenv(find_dotenv())
-params = pika.URLParameters(os.environ['AMQPS_KEY'])
+params = pika.ConnectionParameters('localhost')
 
 connection = pika.BlockingConnection(params)
 

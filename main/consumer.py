@@ -2,14 +2,14 @@ import json
 import pika
 import os
 import django
-from dotenv import load_dotenv, find_dotenv
 
-load_dotenv(find_dotenv())
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "main.settings")
 django.setup()
 from user.models import Product
 
-params = pika.URLParameters(os.environ['AMQPS_KEY'])
+
+params = pika.ConnectionParameters('localhost')
+
 
 connection = pika.BlockingConnection(params)
 
