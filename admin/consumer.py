@@ -9,9 +9,6 @@ django.setup()
 
 from products.models import Product
 
-# params = pika.URLParameters(
-#     'amqps://ivzdrafs:ayWp8Y9LV_TUCuHc5c_g7zQXiDJITB0t@kebnekaise.lmq'
-#     '.cloudamqp.com/ivzdrafs')
 
 params = pika.ConnectionParameters('localhost')
 
